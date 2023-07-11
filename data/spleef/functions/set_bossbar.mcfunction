@@ -1,0 +1,4 @@
+
+
+execute if score $seconds game matches 0..9 run bossbar set spleef name [{"text":"Spleef","color":"white","bold":true},{"text":"   |   ","color":"white"},{"score":{"name":"$minutes","objective":"game"},"color":"aqua","bold":true},{"text":":","color":"aqua","bold":true},{"text":"0","color":"aqua","bold":true},{"score":{"name":"$seconds","objective":"game"},"color":"aqua","bold":true}]
+execute unless score $seconds game matches 0..9 run bossbar set spleef name [{"text":"Spleef","color":"white","bold":true},{"text":"   |   ","color":"white"},{"score":{"name":"$minutes","objective":"game"},"color":"aqua","bold":true},{"text":":","color":"aqua","bold":true},{"score":{"name":"$seconds","objective":"game"},"color":"aqua","bold":true}]

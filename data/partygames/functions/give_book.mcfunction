@@ -1,0 +1,3 @@
+
+
+give @p written_book{display:{Name:'{"text":"Location Book","color":"green","italic":false}'},title:"",author:"joker876",pages:['[{"text":"Spawn\\n","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"Click!"}]},"clickEvent":{"action":"run_command","value":"/tp @s 0 1 0"}},{"text":"Spleef\\n","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"Click!"}]},"clickEvent":{"action":"run_command","value":"/tp @s 0 1 10000"}}]']} 1
