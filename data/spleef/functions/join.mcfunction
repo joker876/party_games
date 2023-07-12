@@ -2,7 +2,7 @@
 
 execute unless entity @a[scores={game=1}] run schedule function spleef:try_to_start 30s
 execute unless entity @a[scores={game=1}] run tellraw @s [{"text":"Gra rozpocznie się za ","color":"white"},{"text":"30s","color":"red","bold":true},{"text":"."}]
-execute if entity @a[scores={game=1},tag=try_to_start] run schedule function spleef:try_to_start 10s
+execute if entity @a[scores={game=1},tag=try_to_start] run schedule function spleef:try_to_start 10s replace
 execute if entity @a[scores={game=1},tag=try_to_start] run tellraw @a[scores={game=1}] [{"text":"Gra rozpocznie się za ","color":"white"},{"text":"10s","color":"red","bold":true},{"text":"."}]
 scoreboard players set @s game 1
 execute store result score @a[scores={game=1}] playercount run execute if entity @a[scores={game=1}]
